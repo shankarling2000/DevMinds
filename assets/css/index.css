@@ -1,34 +1,38 @@
-#logowhite {
+body {
+    background-color: #000;
 
-    top: 0;
-    left: 5px;
-    width: 100px;
-    margin-top: none;
-    height: 100px;
-    position: absolute;
-    z-index: 1;
 }
 
-@media only screen and (max-width: 768px) {
-
-    /* Change the logo size and position for smaller screens */
-    #logowhite {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        width: 80px;
-        height: 80px;
-    }
+#splash-logo {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
 }
 
-@media only screen and (max-width: 480px) {
+#btns-container {
+    text-align: center;
+    margin-top: 50px;
 
-    /* Further adjust the logo size and position for even smaller screens */
-    #logowhite {
-        position: absolute;
-        top: 5px;
-        left: 5px;
-        width: 110px;
-        height: 100px;
-    }
+}
+
+#btns-container button {
+    font-size: 1.5em;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #FC3;
+    color: #000;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+#btns-container button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#btns-container button {
+    transition: all 0.2s ease-in-out;
 }

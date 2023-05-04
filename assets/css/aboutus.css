@@ -1,0 +1,241 @@
+#logowhite {
+
+    top: 0;
+    left: 5px;
+    width: 150px;
+    margin-top: none;
+    height: 150px;
+    position: absolute;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Change the logo size and position for smaller screens */
+    #logowhite {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    /* Further adjust the logo size and position for even smaller screens */
+    #logowhite {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 110px;
+        height: 100px;
+    }
+}
+
+#aboutustext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10%;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+#headings {
+    font-size: 2em;
+    font-weight: 500;
+    color: white;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#devminds-photo {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 40%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#devminds-photo1 {
+    margin-bottom: 5px;
+    height: 70%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabs-content {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    height: 100%;
+    width: 70%;
+    margin-left: 16%;
+}
+
+@media (max-width: 768px) {
+    #aboutustext {
+        font-size: 1.2em;
+    }
+
+    #headings {
+        margin-top: auto;
+        font-size: 1.5em;
+        margin-bottom: none;
+    }
+
+    #devminds-photo,
+    #devminds-photo1 {
+        height: 60%;
+        width: 60%;
+    }
+
+    .tabs-content {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+
+}
+
+
+
+@media (max-width: 480px) {
+    #aboutustext {
+        font-size: 1em;
+    }
+
+
+
+    #headings {
+        margin-top: auto;
+        font-size: 1.2em;
+        margin-bottom: none;
+    }
+
+    #devminds-photo {
+        margin-top: auto;
+        margin: auto;
+        height: 60%;
+        width: 80%;
+    }
+
+    #devminds-photo1 {
+
+        margin-top: none;
+        margin: auto;
+        height: 40%;
+        width: 60%;
+    }
+
+    .tabs-content {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .aboutus1 {
+        position: relative;
+        top: 70px;
+
+    }
+
+
+}
+
+
+.fa-instagram,
+.fa-linkedin,
+.fa-twitter {
+    padding: 20px;
+    font-size: 50px;
+    width: 50px;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px;
+    left: 158%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-instagram {
+    color: #ef05b4;
+}
+
+/* Twitter */
+.fa-twitter {
+
+    color: #55ACEE;
+}
+
+.fa-linkedin {
+
+    color: white;
+}
+
+#socials-text {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 1.5em;
+    margin: none;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+
+    .fa-instagram,
+    .fa-linkedin,
+    .fa-twitter {
+        padding: 1px;
+        font-size: 50px;
+        width: 1px;
+        position: relative;
+        text-decoration: none;
+        margin: 2px;
+        left: 10%;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .fa-instagram,
+    .fa-linkedin,
+    .fa-twitter {
+        padding: 20px;
+        font-size: 20px;
+
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        text-align: center;
+        margin: 20px;
+        left: 20%;
+    }
+}
