@@ -40,3 +40,7 @@ body {
 #btns-container button {
     transition: all 0.2s ease-in-out;
 }
+
+#emptytext {
+    display: none;
+}
