@@ -1812,3 +1812,8 @@
             font-size: larger;
             animation-fill-mode: forwards;
         }
+
+        #letter {
+            height: 50%;
+            width: 50%;
+        }
