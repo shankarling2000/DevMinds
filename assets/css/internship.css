@@ -498,9 +498,19 @@
     }
 
     #courseimg {
-        height: fit-content;
-        width: fit-content;
+        height: 90%;
+        width: 90%;
+        padding-top: 10%;
+
     }
+
+    /* #courseimg:hover {
+        height: 80%;
+        width: 80%;
+        margin: 15px;
+
+    } */
+
 
     @import url(fontawesome.css);
     @import url("<link href=" https: //fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">");
@@ -1780,7 +1790,10 @@
             background: fixed;
             background-image: url(../images/wallpaper2.jpg);
             color: #CCC;
+            text-align: center;
         }
+
+
 
         .registerbtn {
             font-family: 'Montserrat', sans-serif;
@@ -1816,4 +1829,18 @@
         #letter {
             height: 50%;
             width: 50%;
+        }
+
+        .highlight {
+            margin-top: 8px;
+
+        }
+
+        article {
+            margin: 10px;
+        }
+
+        #bodySection {
+            border: #CCC;
+            border: 1px solid;
         }
