@@ -499,4 +499,5 @@
     #courseimg {
         height: fit-content;
         width: fit-content;
+        border: 2px solid rgba(245, 164, 37, 0.7);
     }
