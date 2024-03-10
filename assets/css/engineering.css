@@ -14,6 +14,7 @@ html {
     z-index: 1;
 }
 
+
 @media only screen and (max-width: 768px) {
 
     /* Change the logo size and position for smaller screens */
@@ -640,4 +641,13 @@ section.contact form button {
 
     scroll-behavior: smooth;
     transition-delay: 800ms;
+}
+
+.video-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.80);
+    top: 0;
+    left: 0;
+    bottom: 7px;
+    width: 100%;
 }
