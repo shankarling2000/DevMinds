@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,76 +10,138 @@
     <title>DevMinds Workshops</title>
 
     <link rel="icon" href="assets/images/Logo-wbg.png" type="image/icon type">
-    <link rel="stylesheet" href="assets/css/blog.css">
-    <link rel="stylesheet" href="assets/css/homepage.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"
-        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
     <link rel="stylesheet" href="assets/css/templateHomepage.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/lightbox.css">
-    <link rel="stylesheet" href="assets/css/junio.css">
-    <link rel="icon" href="assets/images/Logo-wbg.png" type="image/icon type">
+    <link rel="stylesheet" href="assets/css/owl.css"> 
+    <link rel="stylesheet" href="assets/css/navfoot.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<header class="main-header clearfix" role="header">
 
+<body class="allBodyblog">
+    <div id="overlay" class="overlay">
+      
+        <div class="card1">
+          <span class="close" onclick="closePopup()">&times;</span>
+    
+          <h5>Sign Up to Newsletter</h5>
+          <p>Find the best writes here, worded by learners, teachers, experts, and leaders from around the globe.
+            <br>
+            <div class="form-container1">
+              <form id="contactform" action="https://formspree.io/f/xvojkgpj" method="POST">
+                  <input type="email" name="email" id="email" placeholder="Email" required>
+         
+                  <button id="popupbtn" type="submit">Sign up</button>
+              </form>
+          </div>
+    
+            <span style="font-weight: 800;">Limited slots only. Enroll Now! </span>
+          </p>
+           
+          
+        </div>
+      </div>
+    
+    <script>
+        // Function to open the popup
+        function openPopup() {
+          document.getElementById("overlay").style.display = "block";
+        }
+    
+        // Function to close the popup
+        function closePopup() {
+          document.getElementById("overlay").style.display = "none";
+        }
+      </script>
+    
+    
+
+    
+<header class="main-header clearfix" role="header">
     <div class="logo">
-        <a id="logoHeading" href="index.html"> <img src="assets/images/logo-center.png" id="logowhite" alt="logo">
+        <a id="logoHeading" href="index.html">
+            <img src="assets/images/logo-center.png" id="logowhite" alt="logo">
         </a>
     </div>
     <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
-
     <nav id="menu" class="main-nav" role="navigation">
         <ul class="main-menu">
             <li><a class="external" href="index.html">Home</a></li>
             <li><a class="external" href="blog.html">Blog</a></li>
-            <li> <a class="external" href="gallery.html">Gallery</a></li>
-            <li class="external"><a href="aboutus.html" class="external">About Us</a>
-            </li>
-
+            <li><a class="external" href="aboutus.html">About Us</a></li>
             <li><a class="external" href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
 
-<body class="allBodyblog">
 
-    <div id="maindiv">
-        <h1>DevMinds Blog Page</h1>
-        <section class="blog-posts">
-            <div class="container">
+<section class="section main1-banner" id="top" data-section="section1">
+    <div id="blogheadingid">
+    <h2 class="bloghead">DevMinds Blog</h2>
+    <p class="blogsub" >Find the best writes here, worded by learners, teachers, experts, and leaders.</p>
+</div>
+    <div class="container">
+        <article class="post">
+            <a class="posts" href="https://www.linkedin.com/posts/shritisingh_boredom-creativity-linkedinforcreators-activity-7222104086505013248-IJAc?utm_source=share&utm_medium=member_desktop">
+                <img src="./assets/images/blog2.jpeg" alt="Post Image 1">
+                <h2>Art of being bored...</h2>
+                <p>What being bored could do to you, what you could do by being bored</p>
+                <p><strong>Author: Shriti Singh</strong></p>
+            </a>
+        </article>
+        
+        <article class="post">
+            <a class="posts" href="https://www.linkedin.com/posts/shritisingh_voicerecognition-marketing-mindset-activity-7223694484616704000-UbGt?utm_source=share&utm_medium=member_desktop">
+                <img src="./assets/images/blog4.jpeg" alt="Post Image 3">
+                <h2>Soft Skills? or Super Skills</h2>
+                <p>How soft skills are important to your life regardless of your career path, and how do they evolve into super skills?</p>
+                <p><strong>Author: Shankarling Kalashetty</strong></p>
+            </a>
+        </article>
 
-                <h2>DevHacks 1.0 </h2>
-                <p class="meta">Published on July 15th, 2023 by Shriti Singh</p>
-                <img class="blogimg" src="assets/images/gallery1.jpg" id="blogPhoto1" alt="blog photo">
-                <p align="justify">DevHacks 1.0 was a groundbreaking hackathon that showcased the brilliance of
-                    innovative minds and
-                    the power of collaborative problem-solving. The event brought together tech enthusiasts for two
-                    days of creativity, resulting in an inspiring array of cutting-edge projects and a truly
-                    unforgettable experience.</p>
-                <a href="blogs/devhacksblog.html" id="blogbtn">Read more</a>
-            </div>
+        <article class="post">
+            <a class="posts" href="https://www.linkedin.com/posts/shritisingh_entrepreneurship-startuplife-innovation-activity-7221422207133003777-SBX7?utm_source=share&utm_medium=member_desktop">
+                <img src="./assets/images/blog3.jpeg" alt="Post Image 2">
+                <h2>What move to make next?</h2>
+                <p>What would you do when you're at a loss for what move to make next?</p>
+                <p><strong>Author: Shriti Singh</strong></p>
+            </a>
+        </article>
+        <!-- <article class="post">
+            <a class="posts" href="">
+                <img src="./assets/images/blog3.jpeg" alt="Post Image 2">
+                <h2>What move to make next?</h2>
+                <p>What would you do when you're at a loss for what move to make next?</p>
+                <p><strong>Author: Shriti Singh</strong></p>
+            </a>
+        </article>
 
-            <div class="blog-post">
-                <h2>DevMinds Community</h2>
-                <p class="meta">Published on August 1st, 2023 by Shriti Singh</p>
-                <img class="blogimg" src="assets/images/community.jpg" id="blogPhoto2" alt="blog photo">
-                <p align="justify">DevMinds: Empowering minds, shaping futures - a transformative learning
-                    experience for growth and
-                    success.
-                    Unlock your potential with DevMinds - where innovation, skill-building, and holistic development
-                    converge.
-                </p>
-                <a href="blogs/devhacksblog.html" id="blogbtn">Read more</a>
-            </div>
+        <article class="post">
+            <a class="posts" href="">
+                <img src="./assets/images/blog3.jpeg" alt="Post Image 2">
+                <h2>What move to make next?</h2>
+                <p>What would you do when you're at a loss for what move to make next?</p>
+                <p><strong>Author: Shriti Singh</strong></p>
+            </a>
+        </article>
 
-            <!-- Add more blog posts here -->
+
+        <article class="post">
+            <a class="posts" href="">
+                <img src="./assets/images/blog3.jpeg" alt="Post Image 2">
+                <h2>What move to make next?</h2>
+                <p>What would you do when you're at a loss for what move to make next?</p>
+                <p><strong>Author: Shriti Singh</strong></p>
+            </a>
+        </article>
+    -->
     </div>
-    </section>
+</section>
 
 
-</body>
+
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
     var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
@@ -95,4 +156,30 @@
 </script>
 <!--End of Tawk.to Script-->
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuLink = document.querySelector('.menu-link');
+        const nav = document.querySelector('.main-nav ul');
+
+        menuLink.addEventListener('click', function() {
+            nav.classList.toggle('active');
+        });
+    });
+</script>
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/isotope.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/lightbox.js"></script>
+<script src="assets/js/tabs.js"></script>
+<script src="assets/js/video.js"></script>
+<script src="assets/js/slick-slider.js"></script>
+<script src="assets/js/custom.js"></script>
+
+
+</body>
 </html>
+
+
+

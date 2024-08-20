@@ -11,16 +11,19 @@
     <meta property="og:title" content="Devminds Junio">
     <title>DevMinds Contact us</title>
     <link rel="icon" href="assets/images/Logo-wbg.png" type="image/icon type">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/navfoot.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/lightbox.css">
     <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/templateHomepage.css">
     <link rel="icon" href="assets/images/Logo-wbg.png" type="image/icon type">
+    
+    <!-- Custom CSS for form -->
 
 </head>
 
@@ -36,44 +39,56 @@
 
 <!--header-->
 <header class="main-header clearfix" role="header">
-
     <div class="logo">
         <a id="logoHeading" href="index.html"> <img src="assets/images/logo-center.png" id="logowhite" alt="logo">
         </a>
     </div>
     <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
-
     <nav id="menu" class="main-nav" role="navigation">
         <ul class="main-menu">
             <li><a class="external" href="index.html">Home</a></li>
             <li> <a class="external" href="blog.html">BLOG</a></li>
-            <li> <a class="external" href="gallery.html">Gallery</a></li>
             <li class="external"><a href="aboutus.html" class="external">About Us</a>
             <li> <a class="external" href="contact.html">Contact</a></li>
             </li>
-
         </ul>
     </nav>
 </header>
 
 <body>
     <div id="allBody">
-        <!-- ***** Main Banner Area Start ***** -->
+              <!-- ***** Main Banner Area Start ***** -->
         <section class="section main-banner" id="top" data-section="section1">
             <video autoplay muted loop id="bg-video">
                 <source src="assets/images/devmindsVid2.mp4" type="video/mp4" id="bg-video" />
             </video>
             <div class="video-overlay header-text">
+             
                 <div class="caption">
-                    <h6>Contact us</h6>
+                    <h4 id="contactformheading">Write to us your queries, our team will assist you</h4>
                     <div class="main-button">
                         <div class="form-container">
+                            <h6 id="contactus">Contact us</h6>
                             <form id="contactform" action="https://formspree.io/f/xvojkgpj" method="POST">
+                                <label>Your Name:</label>
+                                <input type="text" name="name" id="name" required>
+                        
+                                <label>Your Interest:</label>
+                                <select name="interest" id="interest" required>
+                                    <option value="">Select an option</option>
+                                    <option value="course">I'm interested in a course</option>
+                                    <option value="internship">I'm interested in an Internship</option>
+                                    <option value="school_PDP">I'm a school, interested in PDP</option>
+                                    <option value="college_training">I'm a college, interested in training programs</option>
+                                    <option value="digital_services">I'm interested in digital services</option>
+                                    <option value="other">Other</option>
+                                </select>
+                        
                                 <label>Your Email:</label>
                                 <input type="email" name="email" id="email" required>
-
+                        
                                 <label>Your Phone:</label>
-                                <input type="text" name="text" id="phone" required>
+                                <input type="text" name="phone" id="phone" required>
 
                                 <label>Your Message:</label>
                                 <textarea name="message" rows="4" id="message" required></textarea>
@@ -83,25 +98,56 @@
                         </div>
                     </div>
                 </div>
+           
             </div>
-
         </section>
+   
+
         <!-- ***** Main Banner Area End ***** -->
 
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p></i> Contact Us
-
-                            | Phone : 8217786932 |
-                            Email : <a href="mailto:devminds.in@gmail.com" rel="sponsored"
-                                target="_parent">devminds.in@gmail.com</a></p>
-                    </div>
+        <footer class="footer">
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="index.html">Testimonials</a></li>
+                    <li><a href="course.html">Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">DevMinds PDP</a></li>
+                    <li><a href="#">Workshops & Training</a></li>
+                    <li><a href="#">Software Solutions</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <ul>
+                    <li>Phone: <a href="tel:+919764205878">+91 8624086730</a></li>
+                    <li>Email: <a href="mailto:devminds.in@gmail.com">devminds.in@gmail.com</a></li>
+                    <li>Address: Bangalore, India</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/company/dev-minds" target=”_blank” class="fa fa-linkedin"></a>
+                    <a href="https://www.instagram.com/devminds.in/" target=”_blank” class="fa fa-instagram"></a>
+                    <a href="https://www.youtube.com/@devmindsyt" target=”_blank” class="fa fa-youtube"></a>
+                    <a href="mailto:devminds.in@gmail.com"  target=”_blank” class="fa fa-google"></a>
+                    <a href="#" target=”_blank” class="fa fa-twitter"></a>
                 </div>
             </div>
-
         </footer>
+      
+        <div class="footer-bottom">
+            <p style="margin: 5px;">All Rights Reserved ©2023</p>
+            <a id="privacy" href="privacy.html">Privacy Policy</a>
+        </div>
 
         <!--Start of Tawk.to Script-->
         <script type="text/javascript">

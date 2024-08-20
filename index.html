@@ -11,11 +11,14 @@
   <meta property="og:title" content="Devminds">
   <title>DevMinds Home</title>
   <link rel="icon" href="assets/images/Logo-wbg.png" type="image/icon type">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Additional CSS Files -->
   <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/navfoot.css">
   <link rel="stylesheet" href="assets/css/templateHomepage.css">
   <link rel="stylesheet" href="assets/css/owl.css">
   <link rel="stylesheet" href="assets/css/lightbox.css">
@@ -48,11 +51,10 @@
     <ul class="main-menu">
       <li><a class="external" href="index.html">Home</a></li>
       <li> <a class="external" href="blog.html">BLOG</a></li>
-      <li> <a class="external" href="gallery.html">Gallery</a></li>
       <li class="external"><a href="aboutus.html" class="external">About Us</a>
 
       </li>
-      <li><a href="contact.html">Contact</a></li>
+      <li  class="external"><a href="contact.html">Contact</a></li>
 
     </ul>
   </nav>
@@ -60,51 +62,20 @@
 
 <body>
 
-  
 
-  <!-- The overlay -->
-  <!-- <div id="overlay" class="overlay">  
-    <div class="card">
-      <span class="close" onclick="closePopup()">&times;</span>
-      <img src="assets/images/Data science  gif.gif" alt="Image">
-      <h5>Internship Bootcamp</h5>
-      <p>Packed with multiple projects and practical code along sessions, led by Industry
-        Experts.
-        <br>
-        <span style="font-weight: 800;">Limited slots only. Enroll Now! </span>
-      </p>
-      <button id="popupbtn" onclick="window.location.href = 'internship.html'">Click here</button>
-    </div>
-  </div> -->
-  <!-- 
-  <script>
-    // Function to open the popup
-    function openPopup() {
-      document.getElementById("overlay").style.display = "block";
-    }
-
-    // Function to close the popup
-    function closePopup() {
-      document.getElementById("overlay").style.display = "none";
-    }
-  </script> -->
-
-
-  </div>
   <div id="allBody">
     <!-- ***** Main Banner Area Start ***** -->
 
-    <section class="section main-banner" id="top" data-section="section1">
+    <section class="section main-banner" id="top1" data-section="section1">
       <video autoplay muted loop id="bg-video">
-
-        <source src="assets/images/devmindsHome.mp4" type="video/mp4" id="bg-video" />
+        <source src="./assets/images/mainvid.mp4" type="video/mp4" id="bg-video" />
       </video>
       <div class="video-overlay header-text">
         <div class="caption">
           <h6><span style="color:#f5a425;">Dev</span>Minds</h6>
           <h2><em>Re </em>- Evolution</h2>
           <div class="main-button">
-            <div class="scroll-to-section"><a href="engineering.html">ENGINEERING</a></div>
+            <div class="scroll-to-section"><a href="#services">Explore</a></div>
             <!-- <div class="scroll-to-section"><a href="junio.html">JUNIO</a></div> -->
             <!-- <div class="scroll-to-section"><a href="junio.html">ProEdge</a></div> -->
             <!-- <div class="scroll-to-section"><a href="junio.html">Events</a></div> -->
@@ -119,25 +90,209 @@
     </section>
     <!-- ***** Main Banner Area End ***** -->
 
-
-
-
-    <section class="bodySection" id="bodySection" data-section="section2">
-
-      <div class="container">
-
-
+    <section class="section main-banner" id="top" data-section="section1">
+      <div class="image-container1">
+        <img id="lgs" src="./assets/images/students.gif" alt="Image 1">
+        <img id="lgs" src="./assets/images/projects.gif" alt="Image 2">
+        <img id="lgs" src="./assets/images/organizations.gif" alt="Image 3">
       </div>
-    </section>
-    <footer>
-      <div class="container">
-        <div class="row">
 
+  </section>
+  <section class="our-services">
+    <h2 id="services">Our Services</h2>
+    <div  class="services-container">
+        <div class="service-item">
+            <a href="course.html"> 
+              <figure>
+              <img src="./assets/images/course.png" alt="Service 1"></a>
+            <figcaption>Certification Courses</figcaption>
+            </figure>
+            </div>
+        <div class="service-item">
+            <a href="junio.html">
+              <figure>
+                <img src="./assets/images/pdp.png" alt="Service 1"></a>
+              <figcaption>DevMinds Junio</figcaption>
+              </figure>
         </div>
+        <div class="service-item">
+            <a href="">
+              <figure>
+                <img src="./assets/images/placement training.png" alt="Service 1"></a>
+              <figcaption>Workshops & Training</figcaption>
+              </figure>
+        </div>
+        <div class="service-item">
+            <a href="">
+              <figure>
+                <img src="./assets/images/Internship.png" alt="Service 1"></a>
+              <figcaption>Internship Programs</figcaption>
+              </figure>
+        </div>
+        <!-- <div class="service-item">
+            <a href="service5.html">
+              <figure>
+                <img src="./assets/images/services.png" alt="Service 1"></a>
+              <figcaption>Software Solutions</figcaption>
+              </figure>
+        </div> -->
+        
+        <!-- Add more services as needed -->
+    </div>
+</section>
+
+  <section class="testimonials" id="testimonials">
+    <div class="testimonials-section">
+      <h2>What Our Clients Say</h2>
+      <!-- <p>We have helped many people achieve their dreams. Hear from some of our satisfied hearts.</p> -->
+      <div class="testimonials-container" id="testimonials-container">
+          <div class="testimonial-card">
+              <div class="testimonial-content">
+                  <img src="./assets/images/testgirl3.png" alt="Client 1">
+                  <h3>Srivalli N</h3>
+                  <h4>RRCE Alumni, Bangalore</h4>
+                  <p>"I had the opportunity to participate in the internship program here and found it to be an 
+                    incredibly rewarding experience. The class provided a comprehensive overview of the industry,
+                     valuable hands-on experience, and a supportive learning environment."
+
+                  </p>
+              </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+                <img src="./assets/images/testboy3.png" alt="Client 2">
+                <h3>Srivatsa R </h3>
+                <h4>Senior Data Engineer, NTT Data </h4>
+                <p>"Excellent team and work. Great opportunity for any students looking for an internship opportunity." </p>
+            </div>
+        </div>
+         
+        <!-- <div class="testimonial-card">
+          <div class="testimonial-content">
+              <img src="./assets/images/testboy2.png" alt="Client 2">
+              <h3>Chirag R</h3>
+              <h4>JNNCE, Shimoga </h4>
+              <p>"It was a wonderful experience with DevMind’s internship we learnt a lot of things regarding our course
+                 and every session was the most interesting, informative and interactive. Thank you for making our internship
+                  beautiful" </p>
+          </div>
+      </div> -->
+
+
+          <!-- Add more testimonial cards as needed -->
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+                <img src="./assets/images/testgirl2.png" alt="Client 5">
+                <h3>Mahalakshmi S</h3>
+                <h4>Software Engineer, Capegemini</h4>
+                <p>"An absolute game-changer in the educational journey, which provides invaluable resources, support, 
+                  and opportunities for growth"</p>
+            </div>
+        </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+            <img src="./assets/images/testboy1.png" alt="Client 5">
+            <h3>Sripada Adiga</h3>
+            <h4>DevMinds Alumni, Bangalore</h4>
+            <p>"Devminds has been my go-to for personalized career counseling and diverse courses.
+              Whether for personal or professional development, 
+              Devminds has truly helped me unlock my full potential. Highly recommended!"</p>
+        </div>
+    </div>
+
       </div>
+  </div>
+  </section>
+    
+    
+    <section class="section main-banner" id="top" data-section="section1">
+      <div class="image-container1">
+        <img  id="lgs" src="./assets/images/aicte.png" alt="Image 1">
+        <img  id="lgs" src="./assets/images/msme.png" alt="Image 2">
+        <img  id="lgs" src="./assets/images/google.png" alt="Image 3">
+    </div>
+      <div class="contactusform">
+        <div class="form-container">
+          <h6>Contact us</h6>
+          <form id="contactform" action="https://formspree.io/f/xvojkgpj" method="POST">
+              <!-- <label> Name:</label> -->
+              <input type="text" name="name" id="name" placeholder="Name"  required>
+      
+              <label>Interest:</label>
+              <select name="interest" id="interest" required>
+                  <option value="">Select an option</option>
+                  <option value="course">I'm interested in a course</option>
+                  <option value="internship">I'm interested in an Internship</option>
+                  <option value="school_PDP">I'm a school, interested in PDP</option>
+                  <option value="college_training">I'm a college, interested in training programs</option>
+                  <option value="digital_services">I'm interested in digital services</option>
+                  <option value="other">Other</option>
+              </select>
+      
+              <label>Email:</label>
+              <input type="email" name="email" id="email"  placeholder="Email" required>
+      
+              <label>Phone:</label>
+              <input type="text" name="phone" id="phone"  placeholder="Phone" required>
+
+              <label>Message:</label>
+              <textarea name="message" rows="2" id="message"  placeholder="Comment" required></textarea>
+              <!-- your other form fields go here -->
+              <button type="submit">Send</button>
+          </form>
+      </div>
+        <div class="image-container">
+            <img src="./assets/images/community.jpg" alt="Contact Us">
+        </div>
+    </div>
+    </section>
 
 
-    </footer>
+    <footer class="footer">
+      <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+              <li><a href="aboutus.html">About</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="index.html">Testimonials</a></li>
+              <li><a href="course.html">Services</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+              <li><a href="#">Courses</a></li>
+              <li><a href="#">DevMinds PDP</a></li>
+              <li><a href="#">Workshops & Training</a></li>
+              <li><a href="#">Software Solutions</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h4>Contact</h4>
+          <ul>
+              <li>Phone: <a href="tel:+919764205878">+91 8624086730</a></li>
+              <li>Email: <a href="mailto:devminds.in@gmail.com">devminds.in@gmail.com</a></li>
+              <li>Address: Bangalore, India</li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+              <a href="https://www.linkedin.com/company/dev-minds" target=”_blank” class="fa fa-linkedin"></a>
+              <a href="https://www.instagram.com/devminds.in/" target=”_blank” class="fa fa-instagram"></a>
+              <a href="https://www.youtube.com/@devmindsyt" target=”_blank” class="fa fa-youtube"></a>
+              <a href="mailto:devminds.in@gmail.com"  target=”_blank” class="fa fa-google"></a>
+              <a href="#" target=”_blank” class="fa fa-twitter"></a>
+          </div>
+      </div>
+  </footer>
+
+  <div class="footer-bottom">
+      <p style="margin: 5px;">All Rights Reserved ©2023</p>
+      <a href="privacy.html" id="privacy">Privacy Policy</a>
+  </div>
 
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
@@ -154,6 +309,7 @@
     <!--End of Tawk.to Script-->
 
     <!-- Scripts -->
+   
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -165,7 +321,10 @@
     <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/custom.js"></script>
 
+
+
   </div>
 </body>
 
 </html>
+
