@@ -1,14 +1,15 @@
 @import url(fontawesome.css);
-@import url("<link href=" https: //fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
     body {
         font-family: 'Jost', sans-serif;
+        background-color: aliceblue;
     }
 
     /* Basic */
 
     a {
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         text-decoration: none;
     }
 
@@ -289,7 +290,8 @@
     /* Slider */
 
     .main-banner {
-        background-color: #27005d;
+        background-color: transparent;
+        background-image: url(/assets/images/checkered\ bg.jpg);
         position: relative;
         max-height: 100%;
         overflow: scroll;
@@ -338,7 +340,7 @@
 
     .main-banner .caption h2 {
         margin-top: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         font-size: 64px;
         text-transform: uppercase;
         font-weight: 800;
