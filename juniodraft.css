@@ -3,7 +3,7 @@
 
 body {
     
-    background-image: url(/assets/images/checkered\ bg.jpg);
+    background-image: url(/assets/images/checkered\ bg2.png);
     color: aliceblue;
     font-family: 'Jost', sans-serif;
     margin: 0;
@@ -59,6 +59,7 @@ body {
 
 /* Section 2: Courses */
 .courses-section {
+    
     text-align: center;
     
 
@@ -79,7 +80,7 @@ body {
 
 .course-card {
     position: relative;
-    width: 200px;
+    width: 250px;
     margin: 10px;
     overflow: hidden;
     border-radius: 10px;
@@ -162,7 +163,7 @@ canva download the card images without bg and change bg color down below if requ
 /* Mobile */
 @media (max-width: 599px) {
     .intro-section {
-        /* margin-top: 30px; */
+        margin-top: 30px;
         font-size: small;
         flex-direction: column;
         text-align: center;
@@ -215,6 +216,7 @@ canva download the card images without bg and change bg color down below if requ
 
 .testimonial-card footer {
     margin-top: 20px;
+    font-style: italic;
     text-align: center;
 }
 
@@ -237,7 +239,7 @@ canva download the card images without bg and change bg color down below if requ
     font-family: "IBM Plex Sans", sans-serif;
     color: black;
     
-    margin-top: 3%;
+    margin-top: 2%;
     font-size: 3em;
 
 }
@@ -329,47 +331,6 @@ input:focus, select:focus, textarea:focus {
 
 /* Responsive Design */
 
-
-.marquee-container {
-    background-color: #ffd900; /* Dark greenish teal background */
-    padding: 10px;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .marquee {
-    display: inline-block;
-    white-space: nowrap;
-    animation: marquee 8s linear infinite;
-  }
-
-  .marquee span {
-    font-size: 16px;
-    color: #000000; /* White text */
-    font-weight: bold;
-  }
-
-  #bold{
-  
-    background-color:#f6b737;
-  }
-
-  #bold1{
-    color: aliceblue;
-    background-color:#27005d;
-  }
-
-  @keyframes marquee {
-    from {
-      transform: translateX(100%);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-  }
-
-
-
 /* Tablet */
 @media (min-width: 600px) and (max-width: 900px) {
     .contact-section {
@@ -394,23 +355,6 @@ input:focus, select:focus, textarea:focus {
 
 /* Mobile */
 @media (max-width: 599px) {
-
-
-    .underlined{
-        display: none;
-}
-    #coursedes{
-        font-size: initial;
-    }
-
-    #coursehead{
-        font-size: xx-large;
-    }
-
-    #openPopupBtn{
-        width: 60%;
-        margin-bottom: 10%;
-    }
     .contact-section {
         padding: 20px 10px;
         max-width: 100%;
@@ -462,25 +406,9 @@ input:focus, select:focus, textarea:focus {
     font-family: "IBM Plex Sans", sans-serif;
     text-align: left;
     margin-left: 10%;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
     font-size: 1.1em;
-    margin-top: 0%;
-    line-height: 1.5;
 }
-
-#vabdes1{
-    max-width: 50%;
-    text-align: justify;
-    color: black;
-    font-family: "IBM Plex Sans", sans-serif;
-    text-align: left;
-    margin-left: 10%;
-    margin-bottom: 0%;
-    line-height: 2;
-    font-size: 1.2em;
-}
-
-
 
 #vabdeets{
 
@@ -493,7 +421,7 @@ input:focus, select:focus, textarea:focus {
  margin-left: 5%;
  
  overflow: hidden;
- padding: 10px;
+ padding: 15px;
  float: right;
 }
 #imgandtext, #text {
@@ -505,8 +433,17 @@ input:focus, select:focus, textarea:focus {
     background: #013f83;
 }
 
-@media (min-width: 200px) and (max-width: 598px) {
 
+@media (min-width: 300px) and (max-width: 650px) {
+
+#junioBookmark{
+    width: 100%;
+}
+
+}
+
+
+@media (min-width: 200px) and (max-width: 598px) {
 
     #enquries{
         margin-left: 5% ;
@@ -516,24 +453,27 @@ input:focus, select:focus, textarea:focus {
     #vabhead{
         margin-left: 5%;
         margin-right: 5%;
-        font-size: 1.2em;
         text-align: center;
-        margin-bottom: 5%;
-
     }
-
-   
+    
     #vabdes{
         max-width: 100%;
         text-align: justify;
         margin-left: 5%;
         margin-right: 5%;
-        margin-top: 5%;
-        font-size: unset;
         margin-bottom: 10%;
   
     }
 
+    #juniobookmark{
+        width: 100%;
+    }
+    
+
+    #vabdeets{
+       
+
+    }
  
     #imgandtext {
         margin: none;
@@ -573,13 +513,22 @@ input:focus, select:focus, textarea:focus {
  @media (min-width: 200px) and (max-width: 926px) {
 
         #domainsdes{
-            font-size: unset;
             margin: 5%;
          }
 
  
 }
 
+#explorebtn{
+    border-radius: 50px;
+    font-size: larger;
+    width: 30%;
+    height: 60px;
+    border: none;
+    background-color: black;
+    color: aliceblue;
+    margin-bottom: 3.5%;    
+}
 
 #enquries{
     color: black;
@@ -596,175 +545,49 @@ input:focus, select:focus, textarea:focus {
     color: black;
 }
 
+#junioBookmark{
+    width: 60%;
+}
 
 
-
-
- /* Button to open popup */
- .open-popup-btn {
-    border-radius: 50px;
-    font-size: larger;
-    width: 30%;
-    height: 60px;
-    border: none;
-    background-color: black;
-    color: aliceblue;
-    margin-bottom: 3.5%;   
+#programs-section {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
   }
 
-  .open-popup-btn:hover {
-    background-color: #ff1a66;
-  }
-
-  /* Overlay background */
-  .popup-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Translucent background */
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;
-    padding: 20px; /* Add some padding to prevent overflow */
-  }
-
-  /* Popup styling */
-  .popup {
+  .program {
     background-color: #fff;
-    width: 100%;
-    max-width: 800px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    animation: slideIn 0.4s ease-out;
-    position: relative; /* For positioning the close button */
+    text-align: center;
+    padding: 20px;
   }
 
-  /* Make the layout flexible for responsiveness */
-  @media (min-width: 768px) {
-    .popup {
-      flex-direction: row;
-    }
-  }
-
-  /* Animation */
-  @keyframes slideIn {
-    from {
-      transform: translateY(-50px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-
-  /* Banner image section */
-  .banner {
-    flex: 1;
-    overflow: hidden;
-  }
-
-  .banner img {
+  .program-image {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
   }
 
-  /* Info section */
-  .info {
-    flex: 2;
-    padding: 20px;
-    overflow-y: auto; /* Prevent overflow if content is too long */
-  }
-
-  .info h2 {
-    font-size: 24px;
+  .program-title {
+    font-size: 1.5em;
     color: #333;
-    margin-bottom: 10px;
-    font-family: "IBM Plex Sans";
+    margin: 10px 0;
   }
 
-  .info p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
-    line-height: 1.5;
-    font-family: "IBM Plex Sans";
+  .program-description {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.6;
   }
 
-  /* Join button */
-  .join-btn {
-    background-color: #a7a7a7;
-    color: #000000;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background-color 0.3s;
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    #programs-section {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
-
-
-  .join-btn1 {
-    background-color: #000000;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 50px;
-    transition: background-color 0.3s;
-  }
-
-
-  .join-btn:hover {
-   cursor: not-allowed;
-  }
-
-  /* Close button */
-  .close-btn {
-    background: none;
-    border: none;
-    color: #000000;
-    font-size: 24px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    transition: color 0.3s;
-    z-index: 1; /* Ensure close button is above other content */
-  }
-
-  .close-btn:hover {
-    color: #333;
-  }
-
-
-
-
-  .underlined{
-    align-items: center;
-    background-image: url(/assets/images/underline.png);
-    background-position: 10px 20px;
-    background-repeat: no-repeat;
-    background-size: 80% 110%;
-    display:inline;
-    line-height: 9%;
-    padding:0 10px ;
-}
-
-.brochure{
-    border-radius: 50px;
-    font-size: medium;
-    padding: 15px;
-    margin-left: 10px;
-    background-color: rgb(0, 0, 0);
-    color: aliceblue;
-
-}
