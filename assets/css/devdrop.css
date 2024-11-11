@@ -161,7 +161,11 @@ input:focus, select:focus {
     height: auto;
   }
 
-  .info-panel, .form-container {
+  .form-container {
+    width: 100%;
+  }
+  .info-panel {
+   margin-top: 120%;
     width: 100%;
   }
 }
