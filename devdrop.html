@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevDrop by DevMinds</title>
+  <link rel="stylesheet" href="assets/css/devdrop.css">
+  <link rel="icon" href="assets/images/Logo-wbg.png" type="image/icon type">
+</head>
+<body>
+    
+  <div class="page-container">
+  
+    <!-- Info Panel (Left Side) -->
+    <div class="info-panel">
+        <a href="course.html#sample">
+            <div class="marquee-container">
+              <div class="marquee">
+                <span>---------- Want to become a web developer in 2025? Enroll now! The New Year Cohort is Live ----------</span>
+              </div>
+            </div>
+          </a>
+        <h2 style="text-align: center;"  >Byteclub 2025</h2>
+      <p style="text-align: center;" id="vabdes1"><b>Applications Live on 16-11-2023</b></p>
+      <p style="text-align: center;"  id="vabdes">January 2025 - Remote Mode</p>
+
+      <!-- <ul>
+        <li>- Live Sessions</li>
+        <li>- Networking & Community</li>
+        <li>- Real World Projects</li>
+        <li>- Certification & Mentorship</li>
+        <li>- Accountability Buddy Team</li>
+      </ul>
+      <p>We also have game days, trivia nights, and everything for you to stay creative 🎮🎉</p>
+      <p>Get a peek at <a href="https://devminds.in/course" target="_blank">devminds.in/course</a></p>
+      <p>We prioritize project-based learning, networking, and working on real-world projects to create an impact on society today. 🌍🚀</p>
+      <p>In this 45-hour course, you'll dive into the world of Web Development from scratch, and ride the MERN (Reactjs, MongoDB, NodeJs) stack wave. 🌊</p>
+      <p>And hey! You'll also make awesome buddies and be part of our super cool community. 🤙👨‍💻👩‍💻</p>
+
+      <h3>Student Success Stories</h3>
+      <p>"I landed my dream job thanks to this course!"</p>
+      <p>"The best hands-on web development course out there."</p> -->
+      <img src="assets/images/bg web dev.png" id="idimg" alt="Web Development Camp">
+      
+      <a  href="course.html#sample" class="enroll-btn"> <p style="text-align: center; margin: 2%;" >Apply Now</p></a>
+    </div>
+
+    <!-- Form Container (Right Side) -->
+    <div class="form-container" id="formContainer">
+     
+
+      <h2>🎉DevMinds Drop Week 1🎉</h2>
+      <p> <b>Drop Every Monday </b></p>
+      <p>Subject : Web Development</p>
+      <form id="userForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" required>
+          <div class="error" id="nameError">Oops! Enter a valid name.</div>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" required>
+          <div class="error" id="phoneError">Uh-oh! Enter a 10-digit phone number.</div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+          <div class="error" id="emailError">Hmm, that doesn't look like an email.</div>
+        </div>
+        <div class="form-group">
+          <label for="domain">Domain Interested In</label>
+          <select id="domain" required>
+            <option value="">Choose your domain 🌐</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Data Science">Data Science</option>
+            <option value="AI">Artificial Intelligence</option>
+            <option value="Cybersecurity">Cybersecurity</option>
+          </select>
+          <div class="error" id="domainError">Pick a field to dive into!</div>
+        </div>
+        <button type="button" class="submit-btn" onclick="validateForm()">Submit</button>
+      </form>
+    </div>
+    <div class="thanks-message" id="thanksMessage">
+        <h3>Thanks for filling out the form! 🎉</h3>
+        <p>Here's your perk – the ultimate knowledge drop 💡</p>
+        <p>Choose a Topic to dive into, today 💡</p>
+        <div class="links">
+            <a href="https://developer.mozilla.org" target="_blank">- Html, CSS & JavaScript: Frontend Basics -</a>
+            <a href="https://developer.mozilla.org" target="_blank">- Reactjs: Frontend Advanced -</a>
+            <a href="https://www.w3schools.com" target="_blank">- Nodejs: Backend -</a>
+          <a href="https://www.freecodecamp.org" target="_blank">- Database:  MySQL -</a>
+          <a href="https://www.codecademy.com" target="_blank">- Codecademy: -</a>
+          
+        </div>
+        <button class="back-btn" onclick="goBack()">Go Back to the Form</button>
+      </div>
+  </div>
+
+  <script>
+    function validateForm() {
+      let isValid = true;
+      
+      const name = document.getElementById('name');
+      const phone = document.getElementById('phone');
+      const email = document.getElementById('email');
+      const domain = document.getElementById('domain');
+      
+      const nameError = document.getElementById('nameError');
+      const phoneError = document.getElementById('phoneError');
+      const emailError = document.getElementById('emailError');
+      const domainError = document.getElementById('domainError');
+      
+      nameError.style.display = phoneError.style.display = emailError.style.display = domainError.style.display = 'none';
+
+      if (!name.value.trim()) {
+        nameError.style.display = 'block';
+        isValid = false;
+      }
+      const phoneRegex = /^[0-9]{10}$/;
+      if (!phoneRegex.test(phone.value)) {
+        phoneError.style.display = 'block';
+        isValid = false;
+      }
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email.value)) {
+        emailError.style.display = 'block';
+        isValid = false;
+      }
+      if (!domain.value) {
+        domainError.style.display = 'block';
+        isValid = false;
+      }
+      if (isValid) {
+        document.getElementById('formContainer').style.display = 'none';
+        document.getElementById('thanksMessage').style.display = 'block';
+      }
+    }
+
+    function goBack() {
+      document.getElementById('thanksMessage').style.display = 'none';
+      document.getElementById('formContainer').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
