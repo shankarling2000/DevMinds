@@ -700,8 +700,8 @@ input:focus, select:focus, textarea:focus {
 
   /* Join button */
   .join-btn {
-    background-color: #a7a7a7;
-    color: #000000;
+    background-color: #000000;
+    color: #ffffff;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -724,14 +724,14 @@ input:focus, select:focus, textarea:focus {
 
 
   .join-btn:hover {
-   cursor: not-allowed;
+
   }
 
   /* Close button */
   .close-btn {
     background: none;
     border: none;
-    color: #000000;
+    color: #ffffff;
     font-size: 24px;
     position: absolute;
     top: 10px;

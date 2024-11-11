@@ -154,8 +154,58 @@ input:focus, select:focus {
   background-color: #ff8b94;
 }
 
+
+
+.submit-btn1 {
+  width: 100%;
+  margin: 1%;
+  padding: 15px;
+  background-color: #ffb6b9;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.submit-btn1:hover {
+  background-color: #ff8b94;
+}
+
 /* Responsive Styles */
-@media (max-width: 768px) {
+
+@media (max-width: 767px){
+
+  .info-panel {
+    margin-top: 180%;
+     width: 100%;
+   }
+
+}
+
+@media (max-width: 628px){
+
+  .info-panel {
+    margin-top: 250%;
+    
+   }
+
+}
+
+@media (max-width: 415px){
+
+  .info-panel {
+    margin-top: 370%;
+    
+   }
+
+}
+
+
+
+@media (max-width: 768px) 
+{
+
   .page-container {
     flex-direction: column;
     height: auto;
@@ -165,7 +215,7 @@ input:focus, select:focus {
     width: 100%;
   }
   .info-panel {
-   margin-top: 120%;
+
     width: 100%;
   }
 }
@@ -174,11 +224,15 @@ input:focus, select:focus {
 .submit-btn:hover {
     background-color: #ff8b94;
   }
-  .thanks-message {
+  /* .thanks-message {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background-color:#ffffff ;
     display: none;
     text-align: center;
     color: #333;
-    padding: 20px;
+    padding: 50px;
+  
   }
   .thanks-message h3 {
     color: #ff6f6f;
@@ -189,7 +243,30 @@ input:focus, select:focus {
     color: #555;
     font-size: 1.1em;
     margin-bottom: 20px;
+  } */
+  
+  .thanks-e {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background-color:#ffffff ;
+    text-align: center;
+    color: #333;
+    padding: 50px;
+  
   }
+  .thanks-e h3 {
+    color: #ff6f6f;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  .thanks-e p {
+    color: #555;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+
+
+
   .links a {
     display: block;
     margin: 12px 0;
