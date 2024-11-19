@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devminds live</title>
+  <link rel="stylesheet" href="webinar.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1 class="logo">Devminds live</h1>
+      <button class="hamburger" id="hamburger">
+        ☰
+      </button>
+      <nav id="nav-links" class="collapsed">
+        <a href="#">Home</a>
+        <a href="#live-live">Live live</a>
+        <a href="#upcoming-live">Upcoming</a>
+        <a href="#register">Register</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+  <!-- Section 2: Courses -->
+  <section class="courses-section">
+      
+
+
+    <div id="imgandtext">
+   
+
+  <img src="assets/images/ask me anything.png" id="schools" alt="scholls">
+
+<div id="vabdeets">
+
+    <div class="secdeets">
+     <h3 id="vabhead">Growth with Devminds live;</h3>
+   
+     <p id="collegeintro">Talk, Learn, and grow with the Community!</p>
+   
+<a href="contact.html"> <button id="contactusbtn"> Watch Now </button></a>
+
+  </div>
+   
+    </div>
+    <!-- <div id="divider"></div> -->
+   </div>
+
+<style>
+  .domain-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .domain-list {
+    margin-top: 2%;
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    max-width: 80%;
+    width: 100%;
+  }
+
+  .domain-item {
+    background-color: #000000;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Responsive adjustment */
+  @media (max-width: 768px) {
+    .domain-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .domain-list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+
+</style>
+  
+  </section>
+
+<section class="mainsection">
+
+    <div class="center">
+    <!-- Live live -->
+    <section id="live-live" class="live-section">
+      <h2>Happening Now</h2>
+      <div class="webinar-card">
+     <img src="assets/images/AMA Poster -1.png" id="posterimg" alt="devminds web development ">
+     
+     <p>🕒 Registration Live | 💻 Speaker: Shankarling Kalashetty</p>
+        <button onclick="alert('Joining webinar...')">Join Now</button>
+      </div>
+    </section>
+
+    <!-- Upcoming live -->
+    <section id="upcoming-live" class="live-section">
+      <h2>Upcoming live</h2>
+      <div class="webinar-card">
+        <h3>Backend Essentials</h3>
+        <p>🗓️ Date: Dec 1, 2024 | 💻 Speaker: Jane Smith</p>
+        <button>Register</button>
+      </div>
+      <div class="webinar-card">
+        <h3>AI for Web Developers</h3>
+        <p>🗓️ Date: Dec 10, 2024 | 💻 Speaker: Dr. Alex Lee</p>
+        <button>Register</button>
+      </div>
+    </section>
+</div>
+</section>
+
+  </main>
+
+  <footer>
+    <p>© 2024 Devminds. All rights reserved.</p>
+  </footer>
+
+  <script>
+
+// Toggle Navbar for Mobile
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+  if (navLinks.classList.contains('collapsed')) {
+    navLinks.classList.remove('collapsed');
+    navLinks.classList.add('expanded');
+  } else {
+    navLinks.classList.remove('expanded');
+    navLinks.classList.add('collapsed');
+  }
+});
+
+
+  </script>
+</body>
+</html>

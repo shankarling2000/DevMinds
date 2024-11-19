@@ -1,0 +1,353 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background:#000000;
+  }
+
+
+  .courses-section {
+    text-align: center;
+    
+
+}
+
+.courses-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+
+
+#imgandtext{
+  margin-top: 2%;
+    background-color: #000000;
+}
+
+#imgandtext > img {
+border-radius: 5%;
+ margin-right: 5%;
+ margin-left: 5%;
+ margin-top: 1%;
+ max-width: 30%;
+ overflow: hidden;
+float: right;
+transition-duration: 300ms;
+}
+
+
+#imgandtext, #text {
+  overflow: hidden;
+}
+
+
+@media (min-width: 200px) and (max-width: 598px) {
+
+  
+  #vabhead{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+}
+  #imgandtext {
+    margin: none;
+}
+
+#imgandtext > img {
+   max-width: 90%;
+   margin: 5%;
+
+}
+}
+
+
+@media (min-width: 200px) and (max-width: 667px) {
+   
+  #contactusbtn {
+        
+    height: 5em;
+    width: 90%;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%; 
+    margin-bottom: 5%;   
+    
+}
+
+  #vabhead{
+   text-align: center;
+   font-size: 2em;
+  }
+
+
+  
+  #collegeintro{
+    text-align: center;
+    font-size: 1em;
+    
+       }
+}
+
+
+@media (min-width: 600px) and (max-width: 900px) {
+  #contactusbtn{
+    margin-bottom: 5%;
+  }
+}
+
+
+@media (max-width: 599px) {
+  #contactusbtn{
+      margin-bottom: 5%;
+    }
+}
+
+
+#contactusbtn {
+  float: left;
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: #000000;
+  color: white;
+  font-weight: 500;
+  box-shadow: 6px 6px 0 0 var(--bg_dark), 3px 3px 0 0 #b8bfd6;
+  height: 5em;
+  border-radius: 10px;
+  width: 20%;
+  margin-top: 2%;
+  margin-left: 5%;    
+  transition-duration: 200ms ;
+
+}
+
+#contactusbtn:hover{
+  box-shadow:  6px 6px #ffffff
+}
+
+
+#collegeintro{
+  color: rgb(255, 255, 255);
+  font-family: "IBM Plex Sans", sans-serif;
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 1%;
+  font-size: 1.2em;;
+}
+
+#schools:hover {
+  transform: scale(0.9);
+  }
+
+  
+
+#vabdeets{
+  margin-top: 5%;
+  padding: 10px;
+}
+
+
+#vabhead{
+  color: rgb(0, 0, 0);
+  font-size: 2.5em;
+  font-family: "IBM Plex Sans", sans-serif;
+  text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(252, 252, 252), 1px 1px 0 rgb(255, 255, 255),
+  1px 1px 0 rgb(255, 255, 255);
+  text-align: left;
+  margin-left: 5%;
+  font-weight: 400;
+  margin-top: 8%;
+}
+
+
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000000;
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .navbar nav {
+    display: flex; /* Ensures the nav menu is visible on larger screens */
+    gap: 1rem;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  /* Hamburger Button */
+  .hamburger {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+
+  #nav-links.expanded {
+    display: flex;
+    flex-direction: column;
+    max-height: 500px; /* Arbitrary value to fit links */
+    opacity: 1;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    nav {
+      display: none; /* Hidden by default for mobile */
+      flex-direction: column;
+      background: #6c63ff;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 100%;
+      padding: 1rem 0;
+    }  #nav-links.expanded {
+      display: flex; /* Display the nav menu when expanded */
+    }
+  
+    nav a {
+      text-align: center;
+      padding: 0.5rem;
+      font-size: 1.2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  
+    nav a:first-child {
+      border-top: none;
+    }
+    /* Collapsed Navbar */
+    #nav-links.collapsed {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+    }
+    
+  
+  }
+
+  @media (min-width: 200px) and (max-width: 598px) {
+    #posterimg {
+      max-width: 100%;
+    }
+  }
+
+.center{
+  width: 100%;
+
+}
+
+  #posterimg {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
+  
+  .mainsection{
+    display: flex;
+    align-items: center;
+  }
+
+
+
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+    background: #e8f6ff;
+  }
+  
+  .hero-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  
+  .hero-image {
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Webinar Sections */
+  .live-section {
+    padding: 2rem;
+  }
+  
+  .live-section h2 {
+    font-size: 2rem;
+    color: #6c63ff;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .webinar-card {
+    background: #000000;
+    border: 2px dashed #6c63ff;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .webinar-card h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .webinar-card p {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .webinar-card button {
+    background: #6c63ff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+  }
+  
