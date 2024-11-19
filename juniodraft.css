@@ -20,6 +20,8 @@ body {
     padding: 20px;
 }
 
+
+
 .intro-content {
     display: flex;
     flex-direction: column;
@@ -116,6 +118,12 @@ canva download the card images without bg and change bg color down below if requ
     transform:scale(0.9);
     transition-duration: 300ms;
     
+}
+.program:hover{
+    transition-duration: 300ms;
+    transition: 0.3s; 
+    transform: scale(1.1);
+   
 }
 
 .course-card:hover .overlay-text {
@@ -390,13 +398,15 @@ input:focus, select:focus, textarea:focus {
     color: aliceblue;
 }
 
+
 #vabhead{
     color: black;
     font-family: "IBM Plex Sans", sans-serif;
-    text-align: left;
+    text-align: center;
     margin-left: 10%;
     margin-top: 3%;
     font-weight: 500;
+    margin-bottom: 2%;
 }
 
 #vabdes{
@@ -567,7 +577,7 @@ input:focus, select:focus, textarea:focus {
   }
 
   .program-image {
-    width: 100%;
+    width: 40%;
     height: auto;
     border-bottom: 1px solid #ddd;
     margin-bottom: 15px;
