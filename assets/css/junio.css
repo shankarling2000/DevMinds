@@ -3,7 +3,7 @@
 
 body {
     
-    background-image: url(/assets/images/checkered\ bg2.png);
+    background-image: url(/assets/images/juniobg.png);
     color: aliceblue;
     font-family: 'Jost', sans-serif;
     margin: 0;
@@ -417,7 +417,12 @@ input:focus, select:focus, textarea:focus {
     text-align: left;
     margin-left: 10%;
     margin-bottom: 3%;
-    font-size: 1.1em;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.bookmark{
+    background-color: aliceblue;
 }
 
 #vabdeets{
@@ -564,11 +569,11 @@ input:focus, select:focus, textarea:focus {
     display: grid;
     gap: 20px;
     padding: 20px;
-    background-color: #f7f7f7;
+    background-color: #f7f7f7a1;
   }
 
   .program {
-    background-color: #fff;
+    background-color: #0C469F29;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
