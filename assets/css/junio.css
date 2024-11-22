@@ -122,7 +122,7 @@ canva download the card images without bg and change bg color down below if requ
 .program:hover{
     transition-duration: 300ms;
     transition: 0.3s; 
-    transform: scale(0.9);
+    transform: scale(1.1);
    
 }
 
@@ -418,11 +418,7 @@ input:focus, select:focus, textarea:focus {
     margin-left: 10%;
     margin-bottom: 3%;
     font-size: 1.2em;
-    line-height: 1.5;
-}
-
-.bookmark{
-    background-color: aliceblue;
+line-height: 1.5;
 }
 
 #vabdeets{
@@ -569,16 +565,20 @@ input:focus, select:focus, textarea:focus {
     display: grid;
     gap: 20px;
     padding: 20px;
-    background-color: #f7f7f7a1;
+    background-color: transparent;
   }
 
   .program {
-    background-color: #0C469F29;
+    background-color: rgba(12, 70, 159, 0.2);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
     padding: 20px;
+  }
+
+  .bookmark{
+    background-color: aliceblue;
   }
 
   .program-image {
