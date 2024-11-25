@@ -9,264 +9,182 @@
     <meta property="og:title" content="DevMinds Internship Application">
     <meta property="og:description" content="Apply for the DevMinds Internship and showcase your skills  to join our creative Cult. Fill out the application form and get started now!">
     <meta property="og:image" content="link-to-image.jpg"> <!-- Replace with a relevant image URL -->
-    <meta property="og:url" content="your-page-url-here">
+    <meta property="og:url" content="https://devminds.in/careers">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="DevMinds Internship Application">
     <meta name="twitter:description" content="Apply for the DevMinds Internship and showcase your skills to join our cult.">
     <meta name="twitter:image" content="link-to-image.jpg">
     <meta name="robots" content="index, follow">
-    <title>DevMinds Internship Application</title>
+    <title>DevMinds Careers</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Indie+Flower&display=swap" rel="stylesheet">
-    <style>
-        /* Global styles */
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f3f4f6;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            height: 100vh;
-        }
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/navfoot.css">
+    <link rel="stylesheet" href="assets/css/templateHomepage.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" href="assets/css/course.css">
+    <link rel="stylesheet" href="assets/css/careers.css">
+    <link rel="icon" href="assets/images/Logo-wbg.png" type="image/icon type">
+  
+  </head>
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DD6YCBDBJQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-DD6YCBDBJQ');
+  </script>
 
-        /* Navbar styles */
-        .navbar {
-            width: 100%;
-            background-color: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 10;
-        }
-
-        .navbar img {
-            height: 40px;
-        }
-
-        .nav-links {
-            margin-right: 5%;
-            display: flex;
-            gap: 2rem;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            font-size: 1rem;
-            color: #333;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: #ff6347;
-        }
-
-        /* Mobile hamburger menu */
-        .menu-icon {
-            display: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-
-        /* When navbar is in mobile mode */
-        .navbar.mobile .menu-icon {
-            display: block;
-        }
-
-        .navbar.mobile .nav-links {
-            display: none;
-        }
-
-        .navbar.mobile.active .nav-links {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            position: absolute;
-            top: 70px;
-            right: 10px;
-            background-color: #fff;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            padding: 1rem;
-            border-radius: 10px;
-        }
-
-        /* Container for the application form */
-        .container {
-            background-color: #fff;
-            border-radius: 15px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            padding: 2rem;
-            width: 100%;
-            max-width: 800px;
-            text-align: center;
-            margin-top: 80px; /* Space for fixed navbar */
-            animation: fadeIn 1.5s ease-in-out;
-        }
-
-        h1 {
-            font-family: 'Indie Flower', cursive;
-            color: #ff6347;
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            animation: bounceIn 2s infinite alternate;
-        }
-
-        p {
-            font-size: 1.2rem;
-            color: #333;
-            margin-bottom: 1.5rem;
-        }
-
-        .form-container {
-            background-color: #f9f9f9;
-            border-radius: 10px;
-            padding: 1.5rem;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            animation: slideUp 1s ease-out;
-        }
-
-        iframe {
-            width: 100%;
-            height: 600px;
-            border: none;
-            border-radius: 10px;
-        }
-
-        .cta-btn {
-            background-color: #ff6347;
-            color: white;
-            padding: 1rem 2rem;
-            border: none;
-            font-size: 1.2rem;
-            border-radius: 30px;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-            margin-top: 2rem;
-        }
-
-        .cta-btn:hover {
-            transform: scale(1.1);
-            background-color: #e5533b;
-        }
-
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-
-        @keyframes bounceIn {
-            0% { transform: translateY(-10px); }
-            100% { transform: translateY(10px); }
-        }
-
-        @keyframes slideUp {
-            0% { transform: translateY(30px); opacity: 0; }
-            100% { transform: translateY(0); opacity: 1; }
-        }
-
-        /* Media Queries for Responsiveness */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            p {
-                font-size: 1rem;
-            }
-
-            .container {
-                padding: 1.5rem;
-                width: 90%;
-                max-width: 600px;
-            }
-
-            iframe {
-                height: 500px;
-            }
-
-            .cta-btn {
-                font-size: 1rem;
-                padding: 0.8rem 1.5rem;
-            }
-
-            .nav-links {
-                gap: 1.5rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 1.8rem;
-            }
-
-            p {
-                font-size: 1rem;
-            }
-
-            .container {
-                padding: 1rem;
-                width: 95%;
-                max-width: 500px;
-            }
-
-            iframe {
-                height: 400px;
-            }
-
-            .cta-btn {
-                font-size: 1rem;
-                padding: 0.8rem 1.2rem;
-            }
-
-            .navbar img {
-                height: 30px;
-            }
-
-            .navbar.mobile .nav-links {
-                display: none;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Navbar -->
-    <div class="navbar">
-        <img src="assets/images/Logo-wbg.png" alt="DevMinds Logo">
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="course.html">Get Placed Today</a>
-            <a href="contact.html">Contact us</a>
-        </div>
-        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+  <!--header-->
+<header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a id="logoHeading" href="index.html"> <img src="assets/images/logo-center.png" id="logowhite" alt="logo">
+      </a>
     </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a class="external" href="index.html">Home</a></li>
+        <li> <a class="external" href="blog.html">BLOG</a></li>
+        <li> <a class="external" href="junio.html">Junio</a></li>
+        <li class="external"><a href="aboutus.html" class="external">About Us</a></li>
+        <li class="external"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="container">
-        <h1>DevMinds Internship Application</h1>
-        <p>Ready to show us what makes you the perfect match for this Internship? Apply now!</p>
+  <body>
+    <!-- HTML -->
 
-        <div class="form-container">
-            <!-- Embed Google Form -->
-            <iframe src="https://forms.gle/xo6H6aEJdTom9oz79" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    
+      <div id="allBody">
+  <!-- Section 2: Courses -->
+      <section class="careers-hero">
+
+        <a href="course.html#sample">
+          <div class="marquee-container">
+            <div class="marquee">
+              <span>---------- Want to become a web developer in 2025? Enroll now! The New Year Cohort is Live ----------</span>
+            </div>
+          </div>
+          </a>
+        <h1>CAREERS</h1>
+        <p>Because boring jobs don't deserve you!</p>
+    
+        <div class="card-container">
+          <div class="career-card">
+            <h2>Frontend Developer</h2>
+            <p>👩‍💻 Company: TalkingLands</p>
+            <p> Location: Bangalore</p>
+            <a href="https://forms.gle/HA1VxWHyAAjkwWvJ8" target="_blank" class="apply-btn">Apply Now</a>
+          </div>
+          <div class="career-card">
+            <h2>Back-End Developer</h2>
+            <p>👩‍💻 Company: TalkingLands</p>
+            <p> Location: Bangalore</p>
+            <a href="https://forms.gle/HA1VxWHyAAjkwWvJ8" target="_blank" class="apply-btn">Apply Now</a>
+
+          </div>
+          <div class="career-card">
+            <h2>Systems Engineer</h2>
+            <p>⚙️ Company: ABB Group</p>
+            <p>Location: Bangalore</p>
+            <button class="apply-btn" id="disbtn" disabled>Apps Closed</button>
+          </div>
         </div>
+      </section>  
+    
+    
+    
 
-        <button class="cta-btn" onclick="window.location.href='https://forms.gle/xo6H6aEJdTom9oz79'">
-            Apply Now
-        </button>
+    
+    
+      <!--Start of Tawk.to Script-->
+      <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+          var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+          s1.async = true;
+          s1.src = 'https://embed.tawk.to/6506b362b1aaa13b7a774bf3/1hah2pebk';
+          s1.charset = 'UTF-8';
+          s1.setAttribute('crossorigin', '*');
+          s0.parentNode.insertBefore(s1, s0);
+        })();
+      </script>
+      <!--End of Tawk.to Script-->
+    
+      <!-- Scripts -->
+      <!-- Bootstrap core JavaScript --> 
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/isotope.min.js"></script>
+      <script src="assets/js/owl-carousel.js"></script>
+      <script src="assets/js/lightbox.js"></script>
+      <script src="assets/js/tabs.js"></script>
+      <script src="assets/js/video.js"></script>
+      <script src="assets/js/slick-slider.js"></script>
+      <script src="assets/js/custom.js"></script>
+    
+    </body>
+    <footer class="footer">
+      
+      <div class="footer-column">
+        <h4>Sign Up to Newsletter</h4>
+        <p id="footertext">Worded by learners, teachers, experts, and leaders from around the globe.
+          <br>
+          <div class="form-container1">
+            <form id="contactfooter" action="https://formspree.io/f/xvojkgpj" method="POST">
+                <input type="email" name="email" id="email" class="emailo" placeholder="Email" required>
+       
+                <button id="popupbtn" type="submit">Sign up</button>
+            </form>
+        </div>
     </div>
-
-    <script>
-        function toggleMenu() {
-            document.querySelector('.navbar').classList.toggle('active');
-        }
-    </script>
-
-</body>
-</html>
+    
+      
+      <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+              <li><a href="aboutus.html">About</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="index.html">Testimonials</a></li>
+              <li><a href="course.html">Services</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="course.html">Courses</a></li>
+            <li><a href="junio.html">DevMinds PDP</a></li>
+            <li><a href="workshops.html">Workshops & Training</a></li>
+            <li><a href="https://growglocal.com">Software Solutions</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h4>Contact</h4>
+          <ul>
+              <li>Phone: <a href="tel:+919764205878">+91 8624086730</a></li>
+              <li>Email: <a href="mailto:info@devminds.in">info@devminds.in</a></li>
+              <li>Address: Bangalore, India</li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+              <a href="https://www.linkedin.com/company/dev-minds" target=”_blank” class="fa fa-linkedin"></a>
+              <a href="https://www.instagram.com/devminds.in/" target=”_blank” class="fa fa-instagram"></a>
+              <a href="https://www.youtube.com/@devmindsyt" target=”_blank” class="fa fa-youtube"></a>
+              <a href="mailto:info@devminds.in"  target=”_blank” class="fa fa-google"></a>
+              <a href="#" target=”_blank” class="fa fa-twitter"></a>
+          </div>
+      </div>
+    </footer>
+    
+    <div class="footer-bottom">
+      <p style="margin: 5px;">All Rights Reserved ©2023</p>
+      <a href="privacy.html" id="privacy">Privacy Policy</a>
+    </div>
+    </html>
+    
